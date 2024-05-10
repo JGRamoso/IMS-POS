@@ -1,0 +1,20 @@
+D:\Jay-Jay\School\ULS\AY 23-24\2nd Sem\EDP\System Design\POS and IMS\POS and IMS\POS and IMS\bin\Debug\POS and IMS.exe.config
+D:\Jay-Jay\School\ULS\AY 23-24\2nd Sem\EDP\System Design\POS and IMS\POS and IMS\POS and IMS\bin\Debug\POS and IMS.exe
+D:\Jay-Jay\School\ULS\AY 23-24\2nd Sem\EDP\System Design\POS and IMS\POS and IMS\POS and IMS\bin\Debug\POS and IMS.pdb
+D:\Jay-Jay\School\ULS\AY 23-24\2nd Sem\EDP\System Design\POS and IMS\POS and IMS\POS and IMS\bin\Debug\POS and IMS.xml
+D:\Jay-Jay\School\ULS\AY 23-24\2nd Sem\EDP\System Design\POS and IMS\POS and IMS\POS and IMS\bin\Debug\MessagingToolkit.Barcode.dll
+D:\Jay-Jay\School\ULS\AY 23-24\2nd Sem\EDP\System Design\POS and IMS\POS and IMS\POS and IMS\obj\Debug\POS_and_IMS.frm_addGroup.resources
+D:\Jay-Jay\School\ULS\AY 23-24\2nd Sem\EDP\System Design\POS and IMS\POS and IMS\POS and IMS\obj\Debug\POS_and_IMS.frm_changePassword.resources
+D:\Jay-Jay\School\ULS\AY 23-24\2nd Sem\EDP\System Design\POS and IMS\POS and IMS\POS and IMS\obj\Debug\POS_and_IMS.frm_mainAdmin.resources
+D:\Jay-Jay\School\ULS\AY 23-24\2nd Sem\EDP\System Design\POS and IMS\POS and IMS\POS and IMS\obj\Debug\POS_and_IMS.frm_manageProducts.resources
+D:\Jay-Jay\School\ULS\AY 23-24\2nd Sem\EDP\System Design\POS and IMS\POS and IMS\POS and IMS\obj\Debug\POS_and_IMS.frm_manageStocks.resources
+D:\Jay-Jay\School\ULS\AY 23-24\2nd Sem\EDP\System Design\POS and IMS\POS and IMS\POS and IMS\obj\Debug\POS_and_IMS.frm_manageUser.resources
+D:\Jay-Jay\School\ULS\AY 23-24\2nd Sem\EDP\System Design\POS and IMS\POS and IMS\POS and IMS\obj\Debug\POS_and_IMS.frm_discount.resources
+D:\Jay-Jay\School\ULS\AY 23-24\2nd Sem\EDP\System Design\POS and IMS\POS and IMS\POS and IMS\obj\Debug\POS_and_IMS.frm_mainCashier.resources
+D:\Jay-Jay\School\ULS\AY 23-24\2nd Sem\EDP\System Design\POS and IMS\POS and IMS\POS and IMS\obj\Debug\POS_and_IMS.frm_login.resources
+D:\Jay-Jay\School\ULS\AY 23-24\2nd Sem\EDP\System Design\POS and IMS\POS and IMS\POS and IMS\obj\Debug\POS_and_IMS.Resources.resources
+D:\Jay-Jay\School\ULS\AY 23-24\2nd Sem\EDP\System Design\POS and IMS\POS and IMS\POS and IMS\obj\Debug\POS and IMS.vbproj.GenerateResource.Cache
+D:\Jay-Jay\School\ULS\AY 23-24\2nd Sem\EDP\System Design\POS and IMS\POS and IMS\POS and IMS\obj\Debug\POS and IMS.exe
+D:\Jay-Jay\School\ULS\AY 23-24\2nd Sem\EDP\System Design\POS and IMS\POS and IMS\POS and IMS\obj\Debug\POS and IMS.xml
+D:\Jay-Jay\School\ULS\AY 23-24\2nd Sem\EDP\System Design\POS and IMS\POS and IMS\POS and IMS\obj\Debug\POS and IMS.pdb
+D:\Jay-Jay\School\ULS\AY 23-24\2nd Sem\EDP\System Design\POS and IMS\POS and IMS\POS and IMS\obj\Debug\POS and IMS.vbprojResolveAssemblyReference.cache

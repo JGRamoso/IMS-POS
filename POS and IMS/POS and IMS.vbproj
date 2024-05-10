@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{32075D93-ABEC-46A8-8C27-EDDAF2277BD9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>POS_and_IMS.My.MyApplication</StartupObject>
+    <RootNamespace>POS_and_IMS</RootNamespace>
+    <AssemblyName>POS and IMS</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>POS and IMS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>POS and IMS.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MessagingToolkit.Barcode">
+      <HintPath>E:\Downloads\VS Studio 2012\dlls\barcode and qrcode dll\barcode and qrcode dll\MessagingToolkit.Barcode.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=8.3.0.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\MySQL\MySQL Connector NET 8.3.0\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ADMIN\frm_addGroup.Designer.vb">
+      <DependentUpon>frm_addGroup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\frm_addGroup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMIN\frm_changePassword.Designer.vb">
+      <DependentUpon>frm_changePassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\frm_changePassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMIN\frm_mainAdmin.Designer.vb">
+      <DependentUpon>frm_mainAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\frm_mainAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMIN\frm_manageProducts.Designer.vb">
+      <DependentUpon>frm_manageProducts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\frm_manageProducts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMIN\frm_manageStocks.Designer.vb">
+      <DependentUpon>frm_manageStocks.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\frm_manageStocks.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMIN\frm_manageUser.Designer.vb">
+      <DependentUpon>frm_manageUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ADMIN\frm_manageUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CASHIER\frm_discount.Designer.vb">
+      <DependentUpon>frm_discount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CASHIER\frm_discount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CASHIER\frm_mainCashier.Designer.vb">
+      <DependentUpon>frm_mainCashier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CASHIER\frm_mainCashier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dbconnection.vb" />
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ADMIN\frm_addGroup.resx">
+      <DependentUpon>frm_addGroup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMIN\frm_changePassword.resx">
+      <DependentUpon>frm_changePassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMIN\frm_mainAdmin.resx">
+      <DependentUpon>frm_mainAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMIN\frm_manageProducts.resx">
+      <DependentUpon>frm_manageProducts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMIN\frm_manageStocks.resx">
+      <DependentUpon>frm_manageStocks.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADMIN\frm_manageUser.resx">
+      <DependentUpon>frm_manageUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CASHIER\frm_discount.resx">
+      <DependentUpon>frm_discount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CASHIER\frm_mainCashier.resx">
+      <DependentUpon>frm_mainCashier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
