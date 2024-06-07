@@ -115,6 +115,12 @@
     <Compile Include="ADMIN\frm_manageUser.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="CASHIER\frm_cancelOrder.Designer.vb">
+      <DependentUpon>frm_cancelOrder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CASHIER\frm_cancelOrder.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="CASHIER\frm_discount.Designer.vb">
       <DependentUpon>frm_discount.vb</DependentUpon>
     </Compile>
@@ -125,6 +131,12 @@
       <DependentUpon>frm_mainCashier.vb</DependentUpon>
     </Compile>
     <Compile Include="CASHIER\frm_mainCashier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_report.Designer.vb">
+      <DependentUpon>frm_report.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_report.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="dbconnection.vb" />
@@ -170,11 +182,17 @@
     <EmbeddedResource Include="ADMIN\frm_manageUser.resx">
       <DependentUpon>frm_manageUser.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CASHIER\frm_cancelOrder.resx">
+      <DependentUpon>frm_cancelOrder.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CASHIER\frm_discount.resx">
       <DependentUpon>frm_discount.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CASHIER\frm_mainCashier.resx">
       <DependentUpon>frm_mainCashier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_report.resx">
+      <DependentUpon>frm_report.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>

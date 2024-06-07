@@ -18,3 +18,5 @@ D:\Jay-Jay\School\ULS\AY 23-24\2nd Sem\EDP\System Design\POS and IMS\POS and IMS
 D:\Jay-Jay\School\ULS\AY 23-24\2nd Sem\EDP\System Design\POS and IMS\POS and IMS\POS and IMS\obj\Debug\POS and IMS.xml
 D:\Jay-Jay\School\ULS\AY 23-24\2nd Sem\EDP\System Design\POS and IMS\POS and IMS\POS and IMS\obj\Debug\POS and IMS.pdb
 D:\Jay-Jay\School\ULS\AY 23-24\2nd Sem\EDP\System Design\POS and IMS\POS and IMS\POS and IMS\obj\Debug\POS and IMS.vbprojResolveAssemblyReference.cache
+D:\Jay-Jay\School\ULS\AY 23-24\2nd Sem\EDP\System Design\POS and IMS\POS and IMS\POS and IMS\obj\Debug\POS_and_IMS.frm_cancelOrder.resources
+D:\Jay-Jay\School\ULS\AY 23-24\2nd Sem\EDP\System Design\POS and IMS\POS and IMS\POS and IMS\obj\Debug\POS_and_IMS.frm_report.resources

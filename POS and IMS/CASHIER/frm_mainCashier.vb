@@ -124,7 +124,7 @@ Public Class frm_mainCashier
         conn.Close()
     End Sub
 
-    Private Sub btn_setDiscount_Click(sender As Object, e As EventArgs) Handles btn_setDiscount.Click
+    Private Sub btn_setDiscount_Click(sender As Object, e As EventArgs)
         frm_discount.ShowDialog()
     End Sub
 
@@ -213,7 +213,7 @@ Public Class frm_mainCashier
         txt_searchProBarcode.Focus()
     End Sub
 
-    Private Sub btn_new_Click(sender As Object, e As EventArgs) Handles btn_new.Click
+    Private Sub btn_new_Click(sender As Object, e As EventArgs) Handles btn_cancel.Click
         clear()
         txt_billNo.Text = getBillNo()
     End Sub
@@ -225,5 +225,13 @@ Public Class frm_mainCashier
     Private Sub btn_logout_Click(sender As Object, e As EventArgs) Handles btn_logout.Click
         Me.Close()
         frm_login.Show()
+    End Sub
+
+    Private Sub btn_remove_Click(sender As Object, e As EventArgs) Handles btn_remove.Click
+        DataGridView1.Rows.Remove(DataGridView1.SelectedRows.Item(0))
+    End Sub
+
+    Private Sub btn_cancel_Click(sender As Object, e As EventArgs) Handles btn_cancel.Click
+        frm_cancelOrder.ShowDialog()
     End Sub
 End Class

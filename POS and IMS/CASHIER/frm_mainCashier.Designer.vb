@@ -23,7 +23,7 @@ Partial Class frm_mainCashier
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.lbl_time = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -37,10 +37,12 @@ Partial Class frm_mainCashier
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.btn_remove = New System.Windows.Forms.Button()
+        Me.btn_setDiscount = New System.Windows.Forms.Button()
+        Me.btn_new = New System.Windows.Forms.Button()
         Me.btn_logout = New System.Windows.Forms.Button()
         Me.btn_changePass = New System.Windows.Forms.Button()
-        Me.btn_new = New System.Windows.Forms.Button()
-        Me.btn_setDiscount = New System.Windows.Forms.Button()
+        Me.btn_cancel = New System.Windows.Forms.Button()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.lbl_subTotalPrice = New System.Windows.Forms.Label()
         Me.Label17 = New System.Windows.Forms.Label()
@@ -213,10 +215,12 @@ Partial Class frm_mainCashier
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571!))
         Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.28571!))
+        Me.TableLayoutPanel1.Controls.Add(Me.btn_remove, 0, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.btn_setDiscount, 0, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.btn_new, 0, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.btn_logout, 6, 0)
         Me.TableLayoutPanel1.Controls.Add(Me.btn_changePass, 5, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.btn_new, 0, 0)
-        Me.TableLayoutPanel1.Controls.Add(Me.btn_setDiscount, 1, 0)
+        Me.TableLayoutPanel1.Controls.Add(Me.btn_cancel, 0, 0)
         Me.TableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.TableLayoutPanel1.Location = New System.Drawing.Point(0, 514)
         Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
@@ -225,6 +229,54 @@ Partial Class frm_mainCashier
         Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 56.0!))
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(970, 56)
         Me.TableLayoutPanel1.TabIndex = 2
+        '
+        'btn_remove
+        '
+        Me.btn_remove.BackColor = System.Drawing.Color.DodgerBlue
+        Me.btn_remove.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btn_remove.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.btn_remove.FlatAppearance.BorderSize = 0
+        Me.btn_remove.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_remove.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_remove.ForeColor = System.Drawing.Color.White
+        Me.btn_remove.Location = New System.Drawing.Point(279, 3)
+        Me.btn_remove.Name = "btn_remove"
+        Me.btn_remove.Size = New System.Drawing.Size(132, 50)
+        Me.btn_remove.TabIndex = 18
+        Me.btn_remove.Text = "REMOVE"
+        Me.btn_remove.UseVisualStyleBackColor = False
+        '
+        'btn_setDiscount
+        '
+        Me.btn_setDiscount.BackColor = System.Drawing.Color.DodgerBlue
+        Me.btn_setDiscount.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btn_setDiscount.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.btn_setDiscount.FlatAppearance.BorderSize = 0
+        Me.btn_setDiscount.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_setDiscount.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_setDiscount.ForeColor = System.Drawing.Color.White
+        Me.btn_setDiscount.Location = New System.Drawing.Point(417, 3)
+        Me.btn_setDiscount.Name = "btn_setDiscount"
+        Me.btn_setDiscount.Size = New System.Drawing.Size(132, 50)
+        Me.btn_setDiscount.TabIndex = 17
+        Me.btn_setDiscount.Text = "SET DISCOUNT"
+        Me.btn_setDiscount.UseVisualStyleBackColor = False
+        '
+        'btn_new
+        '
+        Me.btn_new.BackColor = System.Drawing.Color.DodgerBlue
+        Me.btn_new.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btn_new.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.btn_new.FlatAppearance.BorderSize = 0
+        Me.btn_new.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_new.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_new.ForeColor = System.Drawing.Color.White
+        Me.btn_new.Location = New System.Drawing.Point(3, 3)
+        Me.btn_new.Name = "btn_new"
+        Me.btn_new.Size = New System.Drawing.Size(132, 50)
+        Me.btn_new.TabIndex = 16
+        Me.btn_new.Text = "NEW"
+        Me.btn_new.UseVisualStyleBackColor = False
         '
         'btn_logout
         '
@@ -258,37 +310,21 @@ Partial Class frm_mainCashier
         Me.btn_changePass.Text = "CHANGE" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "PASSWORD"
         Me.btn_changePass.UseVisualStyleBackColor = False
         '
-        'btn_new
+        'btn_cancel
         '
-        Me.btn_new.BackColor = System.Drawing.Color.DodgerBlue
-        Me.btn_new.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btn_new.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.btn_new.FlatAppearance.BorderSize = 0
-        Me.btn_new.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_new.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_new.ForeColor = System.Drawing.Color.White
-        Me.btn_new.Location = New System.Drawing.Point(3, 3)
-        Me.btn_new.Name = "btn_new"
-        Me.btn_new.Size = New System.Drawing.Size(132, 50)
-        Me.btn_new.TabIndex = 9
-        Me.btn_new.Text = "NEW"
-        Me.btn_new.UseVisualStyleBackColor = False
-        '
-        'btn_setDiscount
-        '
-        Me.btn_setDiscount.BackColor = System.Drawing.Color.DodgerBlue
-        Me.btn_setDiscount.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btn_setDiscount.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.btn_setDiscount.FlatAppearance.BorderSize = 0
-        Me.btn_setDiscount.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_setDiscount.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_setDiscount.ForeColor = System.Drawing.Color.White
-        Me.btn_setDiscount.Location = New System.Drawing.Point(141, 3)
-        Me.btn_setDiscount.Name = "btn_setDiscount"
-        Me.btn_setDiscount.Size = New System.Drawing.Size(132, 50)
-        Me.btn_setDiscount.TabIndex = 11
-        Me.btn_setDiscount.Text = "SET" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "DISCOUNT"
-        Me.btn_setDiscount.UseVisualStyleBackColor = False
+        Me.btn_cancel.BackColor = System.Drawing.Color.DodgerBlue
+        Me.btn_cancel.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.btn_cancel.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.btn_cancel.FlatAppearance.BorderSize = 0
+        Me.btn_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_cancel.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_cancel.ForeColor = System.Drawing.Color.White
+        Me.btn_cancel.Location = New System.Drawing.Point(141, 3)
+        Me.btn_cancel.Name = "btn_cancel"
+        Me.btn_cancel.Size = New System.Drawing.Size(132, 50)
+        Me.btn_cancel.TabIndex = 9
+        Me.btn_cancel.Text = "CANCEL"
+        Me.btn_cancel.UseVisualStyleBackColor = False
         '
         'Panel3
         '
@@ -543,14 +579,14 @@ Partial Class frm_mainCashier
         Me.DataGridView1.BackgroundColor = System.Drawing.Color.White
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column3, Me.Column4, Me.Column5, Me.Column6, Me.Column7, Me.Column8, Me.Column9})
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DataGridView1.DefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DataGridView1.DefaultCellStyle = DataGridViewCellStyle4
         Me.DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DataGridView1.Location = New System.Drawing.Point(0, 135)
         Me.DataGridView1.Name = "DataGridView1"
@@ -678,8 +714,7 @@ Partial Class frm_mainCashier
     Friend WithEvents Column9 As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents btn_logout As System.Windows.Forms.Button
     Friend WithEvents btn_changePass As System.Windows.Forms.Button
-    Friend WithEvents btn_setDiscount As System.Windows.Forms.Button
-    Friend WithEvents btn_new As System.Windows.Forms.Button
+    Friend WithEvents btn_cancel As System.Windows.Forms.Button
     Friend WithEvents lbl_change As System.Windows.Forms.Label
     Friend WithEvents cbo_payMode As System.Windows.Forms.ComboBox
     Friend WithEvents txt_amountReceived As System.Windows.Forms.TextBox
@@ -705,4 +740,7 @@ Partial Class frm_mainCashier
     Friend WithEvents lbl_time As System.Windows.Forms.Label
     Friend WithEvents lbl_date As System.Windows.Forms.Label
     Friend WithEvents Timer2 As System.Windows.Forms.Timer
+    Friend WithEvents btn_remove As System.Windows.Forms.Button
+    Friend WithEvents btn_setDiscount As System.Windows.Forms.Button
+    Friend WithEvents btn_new As System.Windows.Forms.Button
 End Class
