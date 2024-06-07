@@ -39,8 +39,4 @@ Public Class frm_manageUser
         conn.Close()
         clear()
     End Sub
-
-    Private Sub txt_name_TextChanged(sender As Object, e As EventArgs) Handles txt_name.TextChanged
-
-    End Sub
 End Class
